@@ -1,15 +1,3 @@
-"""
-auth/auth.py
--------------
-Authentication and authorisation helpers for CivicShield IAM.
-
-Password hashing: PBKDF2-HMAC-SHA256 with a random 16-byte salt,
-260 000 iterations.  Old SHA-256 hashes (no '$' separator) are migrated
-transparently on the next successful login.
-
-Session state is managed through Streamlit's st.session_state.
-"""
-
 import hashlib
 import os
 import sqlite3
