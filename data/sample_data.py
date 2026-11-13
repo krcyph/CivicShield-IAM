@@ -1,13 +1,3 @@
-"""
-data/sample_data.py
---------------------
-Seeds the database with fictional government employee records for demonstration
-purposes.  All names, IDs, emails and departments are entirely made up.
-
-Call seed_employees() once during app startup — it checks whether data already
-exists before inserting, so it is safe to call on every run.
-"""
-
 import sqlite3
 from database.db_init import get_connection
 
