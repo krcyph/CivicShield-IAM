@@ -1,11 +1,3 @@
-"""
-database/db_init.py
---------------------
-Handles SQLite database creation and schema initialization for CivicShield IAM.
-All tables are created here with IF NOT EXISTS guards so this module is safe
-to call on every application startup.
-"""
-
 import sqlite3
 import os
 import hashlib
